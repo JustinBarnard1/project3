@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Project3</title>
+</head>
+
+<body class="bg-info">
+    <header class="container-fluid bg-primary text-center text-light">
+        <div class="row">
+            <div class="col">
+                <h3>To Do's</h3>
+            </div>
+        </div>
+    </header>
+
+    <main class="container bg-info">
+        <div class="row">
+            <div class="col-4">
+                <form id="formPost" onsubmit="app.postsController.createPost(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter name here">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="title" class="form-control" id="title" placeholder="Insert Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Post Body</label>
+                        <textarea class="form-control" id="body" rows="3" placeholder="Enter post here..."
+                            type="body"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-8 d-flex justify-content-center flex-wrap p-3" id="postsBody">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-primary text-center text-light">
+        <div class="row">
+            <div class="col">
+                <h5>Made Here, Not There... Or There.</h5>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
